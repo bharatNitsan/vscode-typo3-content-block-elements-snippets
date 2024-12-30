@@ -1,0 +1,68 @@
+{
+  "name": "typo3-contentblock-snippets",
+  "displayName": "TYPO3 Content Block Elements Snippets",
+  "description": "A collection of snippets for the TYPO3 Content Block Elements Fields YAML syntax",
+  "icon": "images/icon.png",
+  "version": "0.0.3",
+  "preview": true,
+	"publisher": "bharat-nitsan",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "license": "MIT",
+  "bugs": {
+		"url": "https://github.com/bharatNitsan/vscode-typo3-content-block-elements-snippets/issues",
+		"email": "bharat.nitsan@gmail.com"
+	},
+  "homepage": "https://github.com/bharatNitsan/vscode-typo3-content-block-elements-snippets",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bharatNitsan/vscode-typo3-content-block-elements-snippets.git"
+	},
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+		"typo3",
+		"nitsan",
+		"contentblock",
+		"contentblocks",
+		"contentblocks",
+		"contentblockelement",
+		"cbe",
+		"cbeyaml",
+		"yaml",
+		"snippet",
+		"yamlsnippet"
+	],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "yaml",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "devDependencies": {
+		"vscode": "^1.0.0"
+	},
+  "author": {
+    "name": "Bharat Nitsan",
+    "email": "bharat.nitsan@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Bharat Makvana",
+      "email": "bharat.nitsan@gmail.com",
+      "url": "https://github.com/bharatNitsan"
+    },
+    {
+      "name": "Adarsh Sharma",
+      "email": "adarshsharma.nitsan@gmail.com",
+      "url": "https://github.com/Adarsh-NITSAN"
+    }
+  ],
+	"__metadata": {
+		"publisherDisplayName": "Bharat Makvana, Adarsh Sharma"
+	}
+}

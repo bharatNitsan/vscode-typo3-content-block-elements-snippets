@@ -1,0 +1,457 @@
+{
+  "Content Block Element(CBE)": {
+    "prefix": "cbe",
+    "body": [
+      "- identifier: ${1:text_identifier}",
+      "  label: '${2:Title}'",
+      "  type: ${3:Text}"
+    ],
+    "description": "Default"
+  },
+  "Input": {
+    "prefix": "cbeinput",
+    "body": [
+      "- identifier: ${1:input_identifier}",
+      "  label: '${2:Headline}'",
+      "  type: Text",
+      "  default: 'Default value'",
+      "  placeholder: 'Placeholder text'"
+    ],
+    "description": "Input Field"
+  },
+  "Headline": {
+    "prefix": "cbehead",
+    "body": [
+      "- identifier: header",
+      "  label: '${2:Headline}'",
+      "  useExistingField: true"
+    ],
+    "description": "Header Field"
+  },
+  "Sub Headline": {
+    "prefix": "cbesubhead",
+    "body": [
+      "- identifier: subheader",
+      "  label: '${2:Sub Headline}'",
+      "  useExistingField: true"
+    ],
+    "description": "Sub Header Field"
+  },
+  "Image": {
+    "prefix": "cbeimg",
+    "body": [
+      "- identifier: image",
+      "  label: '${2:Upload Image}'",
+      "  useExistingField: true"
+    ],
+    "description": "Image Field"
+  },
+  "Fal Image": {
+    "prefix": "cbefalimg",
+    "body": [
+      "- identifier: image",
+      "  label: '${2:Upload Image}'",
+      "  type: File",
+      "  allowed: common-image-types",
+      "  cropVariants:",
+      "    desktop:",
+      "      title: Desktop",
+      "      allowedAspectRatios:",
+      "        portrait:",
+      "          title: Portrait",
+      "          value: 0.75",
+      "        landscape:",
+      "          title: Landscape",
+      "          value: 4 / 3",
+      "      focusArea:",
+      "        x: 0.3",
+      "        y: 0.3",
+      "        width: 0.4",
+      "        height: 0.4",
+      "      coverAreas:",
+      "        - x: 0.1",
+      "          y: 0.8",
+      "          width: 0.8",
+      "          height: 0.1",
+      "    tablet:",
+      "      title: Tablet",
+      "      allowedAspectRatios:",
+      "        square:",
+      "          title: Square",
+      "          value: 0.75",
+      "    smartphone:",
+      "      title: Smartphone",
+      "      allowedAspectRatios:",
+      "        landscape:",
+      "          title: Landscape",
+      "          value: 4 / 3"
+    ],
+    "description": "Image Field with crop variants"
+  },
+  "Media": {
+    "prefix": "cbemedia",
+    "body": [
+      "- identifier: media",
+      "  label: '${2:Select Media}'",
+      "  useExistingField: true"
+    ],
+    "description": "Media Field"
+  },
+  "Text": {
+    "prefix": "cbetext",
+    "body": [
+      "- identifier: ${1:text_identifier}",
+      "  label: '${2:Text}'",
+      "  type: Textarea",
+      "  rows: 5"
+    ],
+    "description": "Textarea"
+  },
+  "Rich Text Editor": {
+    "prefix": "cberte",
+    "body": [
+      "- identifier: ${1:rte_identifier}",
+      "  label: '${2:Content}'",
+      "  type: Textarea",
+      "  enableRichtext: true",
+      "  richtextConfiguration: default"
+    ],
+    "description": "Rich Text Editor"
+  },
+  "Select": {
+    "prefix": "cbeselect",
+    "body": [
+      "- identifier: ${1:select_identifier}",
+      "  label: '${2:Select Option}'",
+      "  type: Select",
+      "  renderType: selectSingle",
+      "  items:\n    - label: '${3:option one}'\n      value: one\n    - label: '${4:option two}'\n      value: two"
+    ],
+    "description": "Select Single Dropdown"
+  },
+  "Select Single Box": {
+    "prefix": "cbeselectbox",
+    "body": [
+      "- identifier: ${1:selectBox_identifier}",
+      "  label: '${2:Select Options}'",
+      "  type: Select",
+      "  renderType: selectSingleBox",
+      "  items:",
+      "    - label: '${3:The first}'",
+      "      value: '${4:one}'",
+      "    - label: '${5:The second}'",
+      "      value: '${6:two}'"
+    ],
+    "description": "Select Single Box Field"
+  },
+  "Select Checkbox": {
+    "prefix": "cbeselectcheck",
+    "body": [
+      "- identifier: ${1:selectCheck_identifier}",
+      "  label: '${2:Select Options}'",
+      "  type: Select",
+      "  renderType: selectCheckBox",
+      "  items:",
+      "    - label: '${3:The first}'",
+      "      value: '${4:one}'",
+      "    - label: '${5:The second}'",
+      "      value: '${6:two}'"
+    ],
+    "description": "Select Checkbox Field"
+  },
+  "Select Multiple Side By Side": {
+    "prefix": "cbeselectside",
+    "body": [
+      "- identifier: ${1:selectMulti_identifier}",
+      "  label: '${2:Select Multiple Options}'",
+      "  type: Select",
+      "  renderType: selectMultipleSideBySide",
+      "  items:",
+      "    - label: '${3:The first}'",
+      "      value: '${4:one}'",
+      "    - label: '${5:The second}'",
+      "      value: '${6:two}'",
+      "  maxitems: ${7:5}",
+      "  size: ${8:5}"
+    ],
+    "description": "Select Multiple Side By Side Field"
+  },
+  "Select Tree": {
+    "prefix": "cbeselecttree",
+    "body": [
+      "- identifier: ${1:selectTree_identifier}",
+      "  label: '${2:Select Tree Options}'",
+      "  type: Select",
+      "  renderType: selectTree",
+      "  treeConfig:",
+      "    parentField: '${3:pid}'",
+      "    appearance:",
+      "      expandAll: ${4:true}",
+      "      showHeader: ${5:true}",
+      "    startingPoints: ${6:1}",
+      "  maxitems: ${7:5}",
+      "  size: ${8:5}"
+    ],
+    "description": "Select Tree Field"
+  },
+  "Radio": {
+    "prefix": "cberadio",
+    "body": [
+      "- identifier: ${1:redio_identifier}",
+      "  label: '${2:Gender}'",
+      "  type: Radio",
+      "  default: 'male'",
+      "  items:",
+      "    - label: '${3:Male}'",
+      "      value: '${4:male}'",
+      "    - label: '${5:Female}'",
+      "      value: '${6:female}'"
+    ],
+    "description": "Radio Button"
+  },
+  "Color": {
+    "prefix": "cbecolor",
+    "body": [
+      "- identifier: ${1:color_identifier}",
+      "  label: '${2:Select color}'",
+      "  type: Color"
+    ],
+    "description": "Color Picker"
+  },
+  "Date": {
+    "prefix": "cbedate",
+    "body": [
+      "- identifier: ${1:date_identifier}",
+      "  label: '${2:Select Date}'",
+      "  type: DateTime"
+    ],
+    "description": "DateTime Field"
+  },
+  "Categories": {
+    "prefix": "cbecats",
+    "body": [
+      "- identifier: categories",
+      "  type: Category",
+      "  minitems: 1",
+      "  treeConfig:",
+      "    startingPoints: 7",
+      "  relationship: manyToMany"
+    ],
+    "description": "Category Field"
+  },
+  "Email": {
+    "prefix": "cbeemail",
+    "body": [
+      "- identifier: ${1:email_identifier}",
+      "  label: '${2:Email}'",
+      "  type: Email",
+      "  autocomplete: true",
+      "  placeholder: '${3:Enter your email address}'",
+    ],
+    "description": "Email Field"
+  },
+  "Password": {
+    "prefix": "cbepassword",
+    "body": [
+      "- identifier: ${1:password_identifier}",
+      "  label: '${2:Add Password}'",
+      "  type: Password"
+    ],
+    "description": "Password Field"
+  },
+  "Password Generator": {
+    "prefix": "cbepasswordgen",
+    "body": [
+      "- identifier: ${1:pass_identifier}",
+      "  label: '${2:Password}'",
+      "  type: Password",
+      "  hashed: ${3:false}",
+      "  passwordPolicy: '${4:default}'",
+      "  fieldControl:",
+      "    passwordGenerator:",
+      "      renderType: passwordGenerator"
+    ],
+    "description": "Password Field with Generator"
+  },
+  "Checkbox": {
+    "prefix": "cbecheckbox",
+    "body": [
+      "- identifier: ${1:checkbox_identifier}",
+      "  label: '${2:Checkbox}'",
+      "  type: Checkbox",
+      "  items:",
+      "    - label: '${3:The first}'",
+      "    - label: '${4:The second}'",
+      "    - label: '${5:The third}'",
+      "  default: ${6:2}",
+      "  cols: ${7:3}"
+    ],
+    "description": "Checkbox Field"
+  },
+  "Checkbox Toggle": {
+    "prefix": "cbetoggle",
+    "body": [
+      "- identifier: ${1:toggle_identifier}",
+      "  label: '${2:Checkbox Toggle}'",
+      "  type: Checkbox",
+      "  renderType: checkboxLabeledToggle",
+      "  items:",
+      "    - label: '${3:Your label}'",
+      "      labelChecked: '${4:Label checked}'",
+      "      labelUnchecked: '${5:Label unchecked}'",
+      "      invertStateDisplay: ${6:true}"
+    ],
+    "description": "Checkbox Toggle Field"
+  },
+  "Number": {
+    "prefix": "cbenumber",
+    "body": [
+      "- identifier: ${1:number_identifier}",
+      "  label: '${2:Number Input}'",
+      "  type: Number",
+      "  format: ${3:integer}",
+      "  default: ${4:10}",
+      "  size: ${5:20}",
+      "  range:",
+      "    lower: ${6:0}",
+      "    upper: ${7:999}"
+    ],
+    "description": "Number Field"
+  },
+  "Folder": {
+    "prefix": "cbefolder",
+    "body": [
+      "- identifier: ${1:folder_identifier}",
+      "  label: '${2:Select Folder}'",
+      "  type: Folder",
+      "  elementBrowserEntryPoints:",
+      "    _default: '${3:1:/styleguide/}'"
+    ],
+    "description": "Folder Field"
+  },
+  "Link": {
+    "prefix": "cbelink",
+    "body": [
+      "- identifier: ${1:url_identifier}",
+      "  label: '${2:Link}'",
+      "  type: Link",
+      "  autocomplete: true",
+      "  default: '${3:https://typo3.org}'",
+      "  allowedTypes:",
+      "    - page",
+      "    - url",
+      "    - file"
+    ],
+    "description": "Link Field"
+  },
+  "Palette": {
+    "prefix": "cbepalette",
+    "body": [
+      "- identifier: ${1:palette_identifier}",
+      "  type: Palette",
+      "  label: '${2:Palette Title}'",
+      "  description: '${3:Palette description}'",
+      "  fields:",
+      "    - identifier: ${4:headline}",
+      "      label: ${5:Headline}",
+      "      type: Text",
+      "    - identifier: ${6:text}",
+      "      label: ${7:Text}",
+      "      type: Text"
+    ],
+    "description": "Palette Field Group"
+  },
+  "Relation": {
+    "prefix": "cberelation",
+    "body": [
+      "- identifier: ${1:relation_identifier}",
+      "  label: '${2:Select Relation}'",
+      "  type: Relation",
+      "  allowed: '${3:pages}'",
+      "  maxitems: ${4:1}",
+      "  suggestOptions:",
+      "    default:",
+      "      additionalSearchFields: '${5:nav_title, url}'",
+      "      addWhere: '${6:AND pages.doktype = 1}'"
+    ],
+    "description": "Relation Field"
+  },
+  "Slug": {
+    "prefix": "cbeslug",
+    "body": [
+      "- identifier: ${1:slug_identifier}",
+      "  label: '${2:Add Slug}'",
+      "  type: Slug"
+    ],
+    "description": "Slug Field"
+  },
+  "Select Number": {
+    "prefix": "cbeselectnum",
+    "body": [
+      "- identifier: ${1:selectNumber_identifier}",
+      "  label: '${2:Select Number}'",
+      "  type: SelectNumber",
+      "  items:",
+      "    - label: '${3:The first}'",
+      "      value: ${4:1}",
+      "    - label: '${5:The second}'",
+      "      value: ${6:2}"
+    ],
+    "description": "Select Number Field"
+  },
+  "Json": {
+    "prefix": "cbejson",
+    "body": [
+      "- identifier: ${1:json_identifier}",
+      "  label: '${2:JSON Content}'",
+      "  type: Json",
+      "  readOnly: ${3:true}",
+      "  cols: ${4:50}",
+      "  rows: ${5:10}",
+      "  enableCodeEditor: ${6:false}"
+    ],
+    "description": "JSON Field"
+  },
+  "Language": {
+    "prefix": "cbelang",
+    "body": [
+      "- identifier: ${1:language_identifier}",
+      "  label: '${2:Select Language}'",
+      "  type: Language"
+    ],
+    "description": "Language Field"
+  },
+  "Collection": {
+    "prefix": "cbecollection",
+    "body": [
+      "- identifier: ${1:collection_identifier}",
+      "  label: '${2:Collection}'",
+      "  type: Collection",
+      "  labelField: ${3:title}",
+      "  appearance:",
+      "    collapseAll: ${4:true}",
+      "    levelLinksPosition: ${5:both}",
+      "  fields:",
+      "    - identifier: ${6:title}",
+      "      label: '${7:Title}'",
+      "      type: Text",
+      "    - identifier: ${8:image}",
+      "      label: '${9:Image}'",
+      "      type: File",
+      "      maxitems: 1"
+    ],
+    "description": "Collection Field"
+  },
+  "UUID": {
+    "prefix": "cbeuuid",
+    "body": [
+      "- identifier: ${1:uuid_identifier}",
+      "  label: '${2:UUID}'",
+      "  type: Uuid",
+      "  size: ${3:50}",
+      "  version: ${4:7}",
+      "  enableCopyToClipboard: ${5:false}"
+    ],
+    "description": "UUID Field"
+  }
+}
