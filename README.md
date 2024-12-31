@@ -42,7 +42,7 @@ For further information about some of the snippets lookup the TYPO3 Content Bloc
 * cbeselectnum - For Select Number Field
 * cbesection - For Section Structure
 
-* Contributing
+Contributing
 ------------
 See all contributors [here](https://github.com/bharatNitsan/graphs/contributors).
 
