@@ -44,7 +44,7 @@ For further information about some of the snippets lookup the TYPO3 Content Bloc
 
 Contributing
 ------------
-See all contributors [here](https://github.com/bharatNitsan/graphs/contributors).
+See all contributors [here](https://github.com/bharatNitsan/vscode-typo3-content-block-elements-snippets/graphs/contributors).
 
 
 ## Requirements
