@@ -2,6 +2,13 @@
 
 A collection of snippets for the TYPO3 Content Blocks Elements Fields YAML syntax.
 
+This extension is developed by [NITSAN](https://nitsantech.de/) to streamline the development process for TYPO3 developers by providing ready-to-use YAML snippets for creating Content Block Elements Fields. Say goodbye to repetitive coding and hello to efficiency and consistency!
+
+**Key Features**
+- Predefined YAML snippets for faster field creation.
+- Simplifies the configuration of TYPO3 content blocks.
+- Boosts productivity by reducing manual work.
+
 For further information about some of the snippets lookup the TYPO3 Content Blocks Elements documentation under the following links:
 
 * [docs.typo3.org](https://docs.typo3.org/p/friendsoftypo3/content-blocks/main/en-us/YamlReference/FieldTypes/)
